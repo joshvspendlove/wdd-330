@@ -13,7 +13,7 @@ function buildMenu()
 		var menu_item = document.createElement('li');
 		var menu_link = document.createElement('a');
 		
-		menu_link.setAttribute('href', links[week]url);
+		menu_link.setAttribute('href', links[week].url);
 		menu_link.innerHTML = links[week].label;
 		
 		menu_item.appendChild(menu_link);
