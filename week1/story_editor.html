@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+  <title>Story Writer</title>
+  <script>
+  
+	function loadStory()
+	{
+		var storyname = document.getElementById('story_name').value;
+		var story = localStorage.getItem(storyname);
+		
+		document.getElementById('story').innerHTML = story;
+	}
+	
+	function saveStory()
+	{
+		var storyname = document.getElementById('story_name').value;
+		var story = document.getElementById('story').value;
+		
+		localStorage.setItem(storyname, story);
+	}
+	
+	function displayStory()
+	{
+		var storyname = document.getElementById('story_name').value;
+		var story = document.getElementById('story').value;
+		
+		document.getElementById('story_display').innerHTML = story;
+	}
+
+  </script>
+
+  <style>
+	#story {
+		width: 800px;
+		height: 250px;
+		background-color: lightyellow;
+	}
+  </style>
+</head>
+
+<body>
+	<h1>Story Editor</h1>
+	<section>
+		<input type="text" id="story_name" placeholder="Your Story Name"></input>
+	</section>
+	<br>
+	<section>
+		<button type="button" id="findit" onclick="loadStory();">Edit</button>
+		<button type="button" id="save" onclick="saveStory();">Save</button>
+		<button type="button" id="display" onclick="displayStory();">Display</button>
+	</section>
+	<br>
+	<section id="story_editor">
+		<textarea id="story" placeholder="Once upon a time..."></textarea>
+	</section>
+	<section id="story_display">
+	</section>
+</body>
+</html>
