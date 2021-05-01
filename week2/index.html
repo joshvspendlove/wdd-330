@@ -2,9 +2,9 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<script src="js/week2.js"></script>
+<script src="js/week02.js"></script>
 </head>
-<body onload="displayExamples();">
+<body onload="showExamples();">
   <section id="notes">
     <h1>Week 2 Notes</h1>
 	<p>Keep HTML, JavaScript, and CSS code in seperate files. This allows for one to be easily changed without breaking the other.</p>
@@ -15,14 +15,24 @@
   </section>
   <section id="examples">
 	<h1>Week 2 Examples</h1>
-	<input type="number" id="triangle_size" value="7" onchange="displayTriangle(value);"></input>
-	<textarea id="triangle" cols="10" rows="10"></textarea>
-	<input type="number" id="fizzbuzz_size" value="100" onchange="displayFizzbuzz(value);"></input>
-	<textarea id="fizzbuzz" cols="10" rows="10"></textarea>
-	<input type="number" id="chessboard_size" value="8" onchange="displayChessboard(value);"></input>
-	<textarea id="chessboard" cols="10" rows="10"></textarea>
+	<section>
+		<h3>Looping a Triangle</h3>
+		<input type="number" id="triangle_size" value="7" onchange="displayTriangle(value);"></input>
+		<br>
+		<textarea id="triangle" cols="10" rows="10"></textarea>
+	</section>
+	<section>
+		<h3>Fizzbuzz</h3>
+		<input type="number" id="fizzbuzz_size" value="100" onchange="displayFizzbuzz(value);"></input>
+		<br>
+		<textarea id="fizzbuzz" cols="10" rows="10"></textarea>
+	</section>
+	<section>
+		<h3>Chessboard</h3>
+		<input type="number" id="chessboard_size" value="8" onchange="displayChessboard(value);"></input>
+		<br>
+		<textarea id="chessboard" cols="10" rows="10"></textarea>
+	</section>
   </section>
-  
-  <script src="week02.js"></script>
 </body>
 </html>
