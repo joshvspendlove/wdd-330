@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<script src="js/week2.js"></script>
+</head>
+<body onload="displayExamples();">
+  <section id="notes">
+    <h1>Week 2 Notes</h1>
+	<p>Keep HTML, JavaScript, and CSS code in seperate files. This allows for one to be easily changed without breaking the other.</p>
+	<p>While its by the preference of the developer, in most instances it is best to create a base that works across most browers and add enhanced features for browsers that support it.</p>
+	<p>There are 2 "Weak" data structures that deal with the reference of objects verses the value. These are Weak Sets and Weak Maps. These data structures were created to help eliminate memory leaks when the referenced object is deleted.</p>
+	<p>DRY - Don't Repeat Yourself</p>
+	<p>The function declaration, "function mean(...values){}" allows for multiple values to be passed as arguments into the function. These arguments can then be accessed through the values array that is created.</p>
+  </section>
+  <section id="examples">
+	<h1>Week 2 Examples</h1>
+	<input type="number" id="triangle_size" value="7" onchange="displayTriangle(value);"></input>
+	<textarea id="triangle" cols="10" rows="10"></textarea>
+	<input type="number" id="fizzbuzz_size" value="100" onchange="displayFizzbuzz(value);"></input>
+	<textarea id="fizzbuzz" cols="10" rows="10"></textarea>
+	<input type="number" id="chessboard_size" value="8" onchange="displayChessboard(value);"></input>
+	<textarea id="chessboard" cols="10" rows="10"></textarea>
+  </section>
+  
+  <script src="week02.js"></script>
+</body>
+</html>
