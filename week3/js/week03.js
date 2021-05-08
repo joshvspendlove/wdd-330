@@ -79,12 +79,14 @@ function balloon()
 
 function balloonKeypressed(event)
 {
+	
 	var balloon = document.getElementById('balloon');
 	switch(event.key)
 	{
 		case 'ArrowUp':
 			size += 10;
 			balloon.style.fontSize = size + "px";
+			event.preventDefault();
 			break;
 		case 'ArrowDown':
 			if (size != 10)
@@ -92,6 +94,7 @@ function balloonKeypressed(event)
 				size -= 10;
 				balloon.style.fontSize = size + "px";
 			}
+			event.preventDefault();
 			break;
 		default:
 			console.log('"' + event.key + '" is not supported');
