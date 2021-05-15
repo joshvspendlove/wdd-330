@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta charset="UTF-8">
+		
+	</head>
+	<body>
+		<hr><hr>
+		<section id="notes">
+			<h1>Week 4 Notes</h1>
+			<hr><hr>
+			<ul>
+				<li>Form elements can be assigned to variables using the name attribute. For example: "const form = document.forms.search;"</li>
+				<li>Additional variables and functions can be added to an object's prototype after the object is created. All instances of the object will then inherit these variables and functions.</li>
+				<li>Variables declared in the constructor of an object become private variables. Getters and/or Setters should be created for these variables.</li>
+				<li>Monkey-patching is the process of adding your own functions to built-in JavaScript objects.</li>
+				<li>Here are two useful function that can be used to create an exact copy of an object.</li>
+			</ul>
+				<pre>
+					<code>
+    function mixin(target,...objects)
+    {
+      for (const object of objects)
+      {
+        if (typeof object === 'object')
+        {	
+          for (const key of Object.keys(object)) 
+          {
+            if (typeof object[key] === 'object')
+            {
+              target[key] = Array.isArray(object[key]) ? [] : {};
+              mixin(target[key], object[key]);				
+            }
+            else 
+            {
+              Object.assign(target, object);
+            }
+          }
+        }
+      }
+    }
+
+    function copy(target)
+    {
+      const object = Object.create(Object.getPrototypeOf(target));
+      mixin(object, target);
+      return object;
+    }
+						</code>
+					</pre>
+				
+		</section>
+		<hr><hr>
+		<section id="code">
+			<h1>Week 4 Code</h1>
+			<p>I had a lot of fun working on the Team Activity this week. <a href="ta04.html">Here is a link</a> to the code I wrote for this activity.</p>
+		</section>
+		<hr><hr>
+		<section id="vector">
+		<h3>Vectors</h3>
+		<hr>
+			<div id="vectorResults"></div>
+		</section>
+		<script src="js/week04.js"></script>
+	</body>
+</html>
