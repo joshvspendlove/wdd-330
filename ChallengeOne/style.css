@@ -1,0 +1,146 @@
+html, body 
+{
+	margin: 0; 
+	height: 100%;
+	overflow: hidden;
+}
+
+body
+{
+	background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 30px, #dddddd 30px, #dddddd 31px),
+        repeating-linear-gradient(-90deg, transparent, transparent 30px, #dddddd 30px, #dddddd 31px);
+    background-size: 31px 31px;
+}
+
+.content
+{
+	width: 80%;
+	height: 100vh;
+	margin: auto;
+}
+
+.list_content
+{
+	margin: auto;
+	height: 65%;
+	background: rgba(255, 255, 255, .5);
+	width: 100%;
+	overflow-y: auto;
+}
+
+
+.taskContent
+{
+	width: 100%;
+	display: inline-grid;
+	 grid-template-columns: 15%  65%  auto;
+	 grid-column-gap: 5px;
+}
+
+.taskDetails
+{
+	grid-column-start: 2;
+	 grid-column-end: 3;
+}
+
+.taskCheck
+{
+	 grid-column-start: 1;
+	 grid-column-end: 2;
+	margin: auto;
+	transform: scale(2.5);
+	-webkit-transform: scale(2.5);
+}
+
+.taskDelete
+{
+	grid-column-start: 3;
+	font-size: ;
+	border: none;
+	background: none;
+}
+#list
+{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#list tr
+{
+
+	border: 1px black solid;
+
+	height: 5vh;
+	background: rgba(221, 221, 221, .5);
+}
+
+.userinput
+{
+	margin: auto;
+	height: auto;
+	width: 100%;
+	
+}
+#createTask
+{
+	width: 100%;
+	display: inline-grid;
+	grid-template-columns: 80% 20%;
+	border: 1px black solid;
+}
+#task
+{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	font-size: 2vh;
+	border: none;
+}
+
+
+#addTask
+{
+	-webkit-appearance: none;
+	height: 4vh;
+	width: 100%;
+	background: rgba(221, 221, 221, 1);
+	margin: auto;
+	border: none;
+	grid-column-start: 2;
+}
+
+#filters
+{
+	width: 100%;
+	
+	display: inline-grid;
+	grid-template-columns: 33%  15%  20% 32%;
+	border: 1px black solid;
+}
+#countTasks 
+{
+	padding-left: 3px;
+	margin: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#filters > *
+{
+	height: 100%;
+	border: none;
+	
+	
+	
+	
+}
+
+.taskComplete .taskDetails
+{
+	background-image: linear-gradient(transparent 7px, black 7px, black 9px,transparent 9px);
+}
+
+.activeFilter
+{
+	background-color: lightgray;
+}
