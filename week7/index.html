@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+	<body>
+		<hr><hr>
+		<section id="notes">
+			<h1>Week 7 Notes</h1>
+			<hr><hr>
+			<ul>
+				<li>Results can be cached within a function. This is especially useful if the computation is expensive to preform.</li>
+				<li>Callback functions must always wait for the current execution stack to complete before they can be invoked.</li>
+				<li>Pure Functions follow these rules (Copied from the text):</li>
+				<li class="stackedList">
+					<ol>
+						<li>The return value of a pure function should only depend on the values provided as arguments. It doesn't rely on values from somewhere else in the program.</li>
+						<li>There are no side-effects. A pure function doesn't change any values or data elsewhere in the program. It only makes non-destructive data transformations and returns new values, rather than altering any of the underlying data.</li>
+						<li>Referential transparency. Given the same arguments, a pure function will always return the same result.</li>
+					</ol>
+				</li>
+				<li>To meet these requirements, pure functions must also have (also copied from the text):</li>
+				<li class="stackedList">
+					<ul>
+						<li>At least one argument; otherwise the return value must depend on something other than the arguments of the function, breaking the first rule</li>
+						<li>A return value; otherwise there’s no point in the function (unless it has changed something else in the program – in which case, it’s broken the 'no side-effects' rule).</li>
+					</ul>
+				</li>
+			</ul>
+			
+		</section>
+		<hr><hr>
+		<section id="examples">
+			<h1>Week 7 Examples</h1>
+			<hr>
+			<section>
+				<h2>Content negotiation</h2>
+				<p>Open the Console to view the results</p>
+			</section>
+		</section>
+			
+				
+				
+		
+		<script src="js/week07.js"></script>
+	</body>
+</html>
