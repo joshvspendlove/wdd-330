@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div>
+    <h1>W08 Team Activity - Working with a remote API</h1>
+    <p id="jsonRaw">
+    <table id="characterTable" class="tableBorder" style="width:100%; padding: 25px;">
+      <thead>
+        <tr>
+          <th class="tableBorder">Character</th>
+          <th class="tableBorder">Display Details</th>
+        </tr>
+      </thead>
+      <tbody id="characterTableBody">
+      </tbody>
+    </table>
+    <button id="btnPrior" onclick="getPrior()">Previous</button>
+    <button id="btnNext" onclick="getNext()">Next</button>
+    </p>
+  </div>
+  
+  <div id="detailsModal" class="modal">
+	<span class="close" title="Close Modal" onclick="closeDetails();">&times;</span>
+		<div class="modal-content">
+			<div class="details" id="details">
+						
+			</div>
+		</div>
+  </div>
+</body>
+
+<script src="starwars.js"></script>
+
+</html>

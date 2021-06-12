@@ -58,14 +58,12 @@ export default class Hikes {
 
   // get the hike comments
   filterCommentsByName(hikeName) {
-    console.log(hikeName);
     let hikeComments = [];
     let nameOfHike = "";
 
     for (const key in comments) {
       nameOfHike = comments[key].name;
-      console.log(nameOfHike);
-      console.table(comments[key]);
+   
 
       if (nameOfHike === hikeName) {
         hikeComments.push(comments[key]);

@@ -1,0 +1,31 @@
+.details 
+{
+	padding: 5%;
+	text-align: center;
+}
+
+/* The Modal (background) */
+.modal 
+{
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 50%;
+	transform: translate(-50%, 0);
+	top: 10%;
+	width: 250px;
+
+	background-color: ghostwhite;
+}
+
+/* Modal Content/Box */
+.modal-content 
+{
+	width: 100%; /* Could be more or less, depending on screen size */
+	height: 100%;
+}
+
+.close
+{
+	font-size: 30px;
+}
