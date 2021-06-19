@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+	<body>
+		<hr><hr>
+		<section id="notes">
+			<h1>Week 9 Notes</h1>
+			<hr><hr>
+			<ul>
+				<li>Global variables are declared without a const, let, or var. These are owned by the window object.</li>
+
+				<li>Each domain is only allowed 20 cookies at 4 KB each. Cookies and Local Storage differ as cookies are for the server and LocalStorage is for the client.</li>
+
+				<li>Data can be added to an HTML page through attributes using the “data-“ suffix. This data can then be pulled using element.dataset.*.</li>
+
+				<li>Workers are the key to multitasking. These are declared such as: const worker = new Worker('task.js');</li>
+
+				<li>Messages are sent between the main and worker with: worker.postMessage() and self.postMessage().</li>
+
+				<li>A message listener must be created to utilize this.</li>
+
+				<li>Workers can be terminated with: worker.terminate(); or self.close();</li>
+				
+			</ul>
+			
+		</section>
+		<hr><hr>
+		<section id="examples">
+			<h1>Week 9 Examples</h1>
+			<hr>
+			<section>
+				<hr><hr><hr>
+				<p>I completed the Modern Front End Development Workflow exercise, though there didn't appear to be much in terms of results.</p>
+				<p>I was the driver for our Team activity, so here is a <a href="./team_activity/">link to that page.</a> (It appears this page works better on PC specifically through Google Chrome)</p>
+				<iframe src="./team_activity/" width="100%" height="auto">iframe is not supported by your browser.</iframe>
+			</section>
+		</section>
+	</body>
+</html>
