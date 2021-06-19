@@ -28,7 +28,7 @@ function triggerSound(elem)
 		{
 			if (tracks[j].dataset.key == elem.dataset.key)
 			{
-					tracks[j].cloneNode()
+					tracks[j].currentTime = 0
 					tracks[j].play()
 			}
 		}
