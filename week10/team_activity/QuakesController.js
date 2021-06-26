@@ -28,13 +28,14 @@ export default class QuakesController {
   //
   // Initialization
   //
-  async init() {
+  async init(radius) {
     // use this as a place to grab the element identified by this.parent, 
     // do the initial call of this.initPos(), and display some quakes 
     // by calling this.getQuakesByRadius()
     this.parentElement = document.querySelector(this.parent);
     await this.initPos();
-    this.getQuakesByRadius(200);
+
+    this.getQuakesByRadius(radius);
   }
 
   //
@@ -48,8 +49,8 @@ export default class QuakesController {
         const ourPosition = await getLocation();
         console.log(ourPosition);
         // if we get the location back then set the latitude and longitude into this.position
-        this.position.lat = ourPosition.coords.latitude;
-        this.position.lon = ourPosition.coords.longitude;
+        this.position.lon = "-111.89033549452324"
+        this.position.lat = "40.45706241622844"
         console.log(this.position);
       } catch (error) {
         console.log(error);
