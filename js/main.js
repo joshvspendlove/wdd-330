@@ -38,6 +38,14 @@ const links = [
 	{
 		label: "Week 10 Notes",
 		url: "week10/"
+	},
+	{
+		label: "Challenge Two: Pillar Evader (Heroku)",
+		url: "http://pillar-evader.herokuapp.com/"
+	},
+	{
+		label: "Challenge Two: Pillar Evader (Local)",
+		url: "ChallengeTwo/"
 	}
 ]
 

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<script src="week11.js" type="module"></script>
+		<title>Week 11</title>
+	</head>
+	<body class="body">
+		<div id="errors" class="errors hidden"></div>
+		<form id="login">
+			<input type="text" id="username" placeholder="Username" value="user1@email.com"></input>
+			<input type="password" id="password" placeholder="Password" value="user1"></input>
+			<button type="submit" id="submit">Login</button>
+		</form>
+		<table id="posts"></table>
+		<br>
+		<form id="addPost" class="hidden">
+			<input id="title" type="text" placeholder="Title" value="Title"></input>
+			<br>
+			<textarea id="comment" rows="25" cols="50" placeholder="Comment">Comment</textarea>
+			<button type="submit" id="submit">Submit</button>
+		</form>
+	</body>
+</html>
+

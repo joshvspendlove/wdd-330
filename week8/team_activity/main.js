@@ -6,6 +6,7 @@ function getPokemon(url)
 		.then(data => {
 			displayPokemonName(data.results)
 			createNavigation(data)
+			console.log(data)
 		});
 }
 

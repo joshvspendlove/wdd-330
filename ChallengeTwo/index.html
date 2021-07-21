@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+	<body>
+		<div class="content">
+
+			<div id="messageModal" class="message-modal">
+				<div class="message-modal-content">
+					<div id="messageClose" class="close">&times;</div>
+					<hr/>
+					<div>
+						<h1 id="message">Challenge Two: Pillar Evader</h1>
+					</div>
+					<div id="buttons">
+						<button id="customButton1" data-command="players">Play</button>
+						<button id="customButton2" data-command="showScores">High Scores</button>
+					</div>
+				</div>
+
+			</div>
+
+			<section class="controls" id="controls">
+
+				<button class="fullBtn" id="menuBtn">Menu</button>
+				<!--button id="step">Step Frame</button-->
+			</section>
+			
+			<section id="game" class="game">
+				<h2 class="playerName" id="playerName">-----</h2>			
+				<table class="gameDetails">
+					<tr>
+						<td class="th">Score</td><td id="score">0</td>
+					</tr>
+					<tr>
+						<td class="th">Health</td><td> <progress class="health_bar" id="playerHealth" value="100" max="100"></progress></td>
+					</tr>
+				</table>
+				<br/>
+				<br/>
+				<canvas class="playarea" id="playarea" width="100" height="100">Sorry, your browser is not supported.</canvas>
+				<br/>
+
+			</section>		
+
+
+
+			<div id="menuModal" class="menu-modal hidden">
+				<div class="menu-modal-content">
+					<span><h1 class="title" id="title">Menu</h1><div id="menuClose" class="close">&times;</div></span>
+					<hr/>
+					<div class="menu-content">
+
+						
+						<div class="hidden playerSpecs" id="playerSpecs">
+						<button id="play" class="fullBtn">Play</button>
+						<div  id="playerDetails"></div>
+						
+						</div>
+						
+						
+						<div class="menu" id="menu">
+							<button class="fullBtn" id="selectPlayer">Select Player</button>
+							<button class="fullBtn" id="showScores">High Scores</button>
+							<button class="fullBtn hidden" id="backBtn">Back</button>
+							
+							<div class="hidden navigation" id="navigation"></div>
+
+							<div class="hidden pokemonList" id="pokemon"></div>
+							<table class="hidden scoreboard" id="scoreboard"></table>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="detailsModal" class="details-modal hidden">
+				<div class="details-modal-content" id="details-modal-content">
+					<div class="details" id="details"></div>
+					<button id="characterSelection">Play as</button>
+					<button id="detailsClose">No Thanks!</button>
+				</div>
+
+			</div>
+		</div>
+		<script type="module" src="js/main.js"></script>
+		<img class="hidden" id="background" src="background.png" alt="Background">
+		</body>
+	</html>
+	

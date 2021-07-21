@@ -1,0 +1,369 @@
+*
+{
+	font-family: "Copperplate", fantasy;
+	text-shadow: 1px 1px black;
+	color: ghostwhite;
+	font-weight: normal;
+}
+
+html
+{
+	height: 100%;
+	
+}
+body
+{
+	height: 100%;
+	background-color: rgb(100,100,100);
+	overflow-y: hidden;
+	
+}
+.health_bar
+{
+	width: 0%;
+	-webkit-appearance: none;
+	appearance: none;
+}
+.content
+{
+	margin: auto;
+	max-width: 500px;
+}
+
+.game
+{
+	text-align: center;
+}
+
+
+button
+{
+	
+	
+	height: 50px;
+	background-color: rgb(90,90,90);
+	width: 100%;
+	margin: 1%;
+	font-size: 150%;
+	
+	text-shadow: 2px 2px black;
+}
+
+.navigation
+{
+	position: sticky;
+	position:-webkit-sticky;
+	top:0;
+
+}
+
+.close
+{
+	width: 100%;
+	text-align: right;
+}
+
+div.pokemon > h2
+{
+	text-shadow: 2px 2px black;
+}
+
+div.pokemon
+{
+	background-color: rgb(70,70,70);
+	margin: 1%;
+}
+
+table.pkmonDetails, table.pkmonDetails > tr 
+{
+	width: 100%;
+	color: white;
+}
+
+table.gameDetails, table.gameDetails > tr 
+{
+	background-color: rgb(90,90,90);
+	width: 100%;
+}
+table.scoreboard
+{
+	text-align: left;
+	
+	
+}
+
+table.scoreboard, table.scoreboard > tr 
+{
+	background-color: rgb(100,100,100);
+	width: 100%;
+}
+
+table.scoreboard, table.scoreboard > tr > td
+{
+	padding: 5px;
+	padding-left: 10px;
+	border: 1px solid black;
+	border-collapse:collapse;
+}
+
+tr.scoreHeaders > th
+{
+	padding: 5px;
+	border: 1px solid black;
+	border-collapse:collapse;
+	font-size: 120%;
+	
+}
+
+.th
+{
+	width: 50px;
+}
+
+.playarea
+{
+	display: inline;
+	background-image: url('background.png');
+	background-size: 100% 100%;
+	width: 90%;
+	height: 100%;
+	
+	
+}
+
+.fullBtn
+{
+	width: 98%;
+}
+
+.halfBtn
+{
+	width: 48%;
+}
+
+.pokemon-modal 
+{
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  max-height: 100%; /* Full height */
+  overflow-y: auto;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+
+/* Modal Content/Box */
+.pokemon-modal-content 
+{
+  background-color: #fefefe;
+  margin: auto auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close 
+{
+  color: #aaa;
+  right: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.title
+{
+	position: fixed;
+	top: 1;
+	color: white;
+	margin: auto auto;
+	text-align: center;
+}
+
+.close:hover, .close:focus 
+{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pokemonList
+{
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+	width: 100%;
+}
+
+
+.message-modal 
+{
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow-y: auto;
+  background-color: rgba(10,10,10,.40);
+  
+}
+
+
+
+/* Modal Content/Box */
+.message-modal-content 
+{
+   background-color: rgb(50,50,50);
+  margin: 10% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 500px;
+}
+
+.message
+{
+	width: 100%;
+	height: 95%;
+	display: block;
+	
+	overflow-y: auto;
+}
+
+.details-modal 
+{
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow-y: auto;
+  background-color: rgba(10,10,10,.40);
+  
+}
+
+/* Modal Content/Box */
+.details-modal-content 
+{
+  background-color: rgb(70,70,70);
+  margin: 10% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 500px;
+}
+
+.details
+{
+	width: 100%;
+	display: inline-grid;
+	grid-template-columns: 50% 50%;
+}
+
+.menu-modal 
+{
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(10,10,10,.75);
+  
+}
+
+
+
+/* Modal Content/Box */
+.menu-modal-content 
+{
+  background-color: rgb(50,50,50);
+  margin: auto auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  height: 80%;
+  overflow-y: hidden;
+	max-width: 500px;
+}
+
+.menu-content 
+{
+  
+  margin: auto auto; /* 15% from the top and centered */
+ 
+
+  width: 100%; /* Could be more or less, depending on screen size */
+  height: 100%;
+  overflow-y: auto;
+}
+
+.menu
+{
+	width: 100%;
+	height: 80%;
+	display: block;
+	text-align: center;
+	overflow-y: auto;
+}
+
+.playerSpecs
+{
+	width: 100%;
+}
+.hidden
+{
+	display: none;
+}
+
+
+
+
+
+@media screen and (orientation: landscape) and (max-height: 450px)
+{
+	.content
+	{
+		max-width: 80%;
+	}
+	.game
+	{
+		display: grid;
+		grid-template-columns: 50% 50%;
+	}
+	
+	.playerName
+	{
+		margin: auto;
+		grid-column-start: 1;
+		grid-column-end: 2;
+		
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+	.gameDetails
+	{
+		grid-column-start: 1;
+		grid-column-end: 2;
+		
+		grid-row-start: 2;
+		grid-row-end: 3;
+	}
+	
+	.playarea
+	{
+		grid-column-start: 2;
+		grid-column-end: 3;
+		
+		grid-row-start: 1;
+		grid-row-end: 3;
+		margin: auto;
+	}
+	
+{
+	
